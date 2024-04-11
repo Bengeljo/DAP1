@@ -1,0 +1,49 @@
+### Was ist ne Datenstruktur?
+- Form der Speicherung von Daten
+- z.B. Arrays, Listen, Bäume, Graphen
+    - Datenstrukturdesign geht Hand in Hand mit Algorithmendesign!
+    - unterschiedliche Alogrithmen sind für unterschiedliche Datenstrukturen geeignet
+    - Datenstrukturen oft ein Tradeoff zwischen Speicherplatz und Zugriffszeit
+    - einfache Alogrithmen brauchen keine Datenstruktur, komplexe schon
+
+### Was ist ein Program? 
+- Ein Programm ist eine Sammlung von Anweisungen, die von einem Computer ausgeführt werden, um eine bestimmte Aufgabe zu erfüllen.
+- ein Programm ist zunächst nur ein Textdokument
+- ein Programm wird erst durch den Compiler oder Interpreter in Maschinencode übersetzt um dann vom Computer ausgeführt zu werden
+- Programmtext -> Compiler/Interpreter -> Maschinencode -> Computer
+
+### Was ist ein word-RAM Modell?
+- word-RAM Modell ist ein mathematisches Modell, das die Ausführung von Algorithmen auf einem Computer beschreibt
+- (Random Access Machine)
+    - Der Speicher besteht aus 2^w Speicherzellen, w ist die Wortbreite	(z.B. 32 Bit) 
+    - 2^32 Speicherzellen entspricht 4 GB Speicher (32 Bit Systeme konnten nur 4GB an Speicher adressieren)
+    - Inhalt unterschiedliche interpretierbar, z.B. Ganzzahl zwischen 0 und 2^w-1
+- Prozessor arbeitet das Programm Wort für Wort ab (Schritt für Schritt)
+- Jede Programmmanweisung (Befehl) kann eine Speicherzelle lesen oder beschreiben
+- Das beschriebene Modell ist eine vereinfachung der Realität, aber es ist ein gutes Modell für die Analyse von Algorithmen
+
+### Operationen im word-RAM-Modell
+- Arithmetische Operationen: +, -, *, /, % (Modulo, Rest bei Division)
+- Vergleichsoperationen: <, >, =, !=, <=, >= (Ergebnis ist 0 oder 1 (false oder true))
+- Logische Operationen: AND, OR, NOT (Arbeiten mit false und true (0 und 1))
+- Bitoperationen: AND, OR, XOR, NOT, Shift
+- Speicheroperationen: Lesen, Schreiben
+- Kontrollstrukturen: if, else, while, for, break, continue, return
+- Program wird Zeile für Zeile abgearbeitet, außer bei Sprüngen (if, else, while, for, break, continue, return)
+
+### Bsp. Algorithmus
+Eingabe: Eine natürliche Zahl n
+Ausgabe: Eine Quadratzahl von n, n^2 = XOR
+Siehe main.cpp
+
+### Was genau passiert in dem Program
+- Eine Speicherzelle wird festgelgt für die Variable n und für nquadrat
+- Wenn dann n festgelegt wird, wird die Speicherzelle für die Variable n mit dem Wert von n belegt
+- Wenn der Rechnung für nquadrat festgelegt wird, wird diese auch in die Speicherzelle abgespeichert
+- Mit dem Print Befehl wird dann der Wert von nquadrat ausgegeben 
+
+### Wichtige Bestandteile des Programms
+- Funktion int maun() -> Hauptfunktion des Programms (Einstiegspunkt)
+- Block {} -> Folge von Anweisungen
+- Variablen -> Speicherzellen, die einen Wert speichern
+
